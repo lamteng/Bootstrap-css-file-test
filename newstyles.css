@@ -1,0 +1,66 @@
+/* Note 1: the original index.html seems having a bug on line 8 
+that it should be id="open-help", but not id='open-help" */
+
+/* Note 2: followed requirement on
+Colour of this top bar: #0A2D50. Padding: 1rem
+ */
+.helpbar{
+  background-color: #0A2D50;
+  padding: 1rem;
+}
+
+/* Note 3: followed requirement on
+Put the “help pane” button on this side.
+Colour of button: #8D9EBCText: black, bold, 1rem. 
+ */
+#open-help {
+  background-color: #8D9EBC;
+  color: black;
+  font-weight:bold;
+  padding: 1rem;
+  position:absolute;
+  right:10px;
+  top:10px;
+}
+
+/* Note 4: followed requirement on
+a. Color of “undo” button: #E2231A
+
+b. Space between these buttons: 0.75rem
+ */
+.btn-primary:nth-last-child(1){
+  background-color: #E2231A;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+.btn-primary:nth-last-child(2) {
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+/* Note 5: followed requirement on
+Make the whole page background the same grey, 
+instead of having the white. 
+ */
+.jumbotron{
+  text-align: center;
+  height: 100%;
+}
+.lead {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+
+/* Note 6: 
+Note for Product Managers (devs, do not implement):The contact form 
+this link takes us to is really annoying for the user on mobile. 
+Could we look into making it so that if they’re on mobile, 
+this link makes them send us an email instead?
+
+Answer: it is suggested to implement this function in JScript
+as it is related to functionality, but not the layout display in css file
+
+*/
